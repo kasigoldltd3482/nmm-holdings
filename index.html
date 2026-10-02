@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080807">
+  <meta name="description" content="NMM Holdings by Melton — Polar ice cream orders, website design, branding, print design and digital support in Polokwane.">
+  <title>NMM Holdings — A vision in motion</title>
+  <link rel="preconnect" href="https://polaricecream.co.za">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="NMM Holdings home">
+      <img src="assets/nmm-logo.jpg" alt="NMM Holdings logo">
+      <span class="brand-caption">A VISION IN MOTION</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#ice-cream">Ice cream</a><a href="#services">What we do</a><a href="#work">Selected work</a><a href="#contact">Contact</a>
+      <button class="cart-open" aria-label="Open shopping cart">Bag <span class="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-backdrop"></div>
+      <div class="hero-photo-wrap"><img class="hero-photo" src="assets/melton-night.png" alt="Melton in a black-and-white night portrait"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="hero-mark"><img src="assets/nmm-logo.jpg" alt="NMM Holdings"></div>
+        <p class="eyebrow hero-eyebrow"><span class="gold-dot"></span> INDEPENDENT. CREATIVE. ALWAYS MOVING.</p>
+        <h1 id="hero-title">A vision<br><em>in motion.</em></h1>
+        <p class="hero-copy">Ice cream worth coming back for. Digital work that helps your business show up with confidence.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#ice-cream">Explore the menu <span>↘</span></a><a class="text-link" href="#work">See what we create <span>↗</span></a></div>
+      </div>
+      <div class="hero-meta"><span>FOUNDED BY MELTON</span><span>POLOKWANE · SOUTH AFRICA</span></div>
+      <a class="scroll-cue" href="#ice-cream" aria-label="Scroll to ice cream"><span></span> SCROLL TO EXPLORE</a>
+      <div class="hero-index">01 <i></i> 04</div>
+    </section>
+
+    <section class="intro-strip reveal">
+      <span class="section-kicker">NMM / HOLDINGS</span>
+      <p>One name. More than one way to make an idea <span>real.</span></p>
+      <span class="strip-mark">NMM</span>
+    </section>
+
+    <section class="ice-section section-pad" id="ice-cream">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span class="gold-dot"></span> THE TREAT COUNTER</p><h2>A little <em>cool.</em><br>A lot of choice.</h2></div>
+        <div class="section-side"><p>Browse the Polar range, pick your favourites and send your order straight to Melton on WhatsApp.</p><p class="micro-note">Stock and final prices are confirmed when you order.</p></div>
+      </div>
+      <div class="catalog-toolbar reveal">
+        <div class="filters" role="group" aria-label="Filter ice cream products">
+          <button class="filter active" data-filter="all">All treats</button><button class="filter" data-filter="lollies">Lollies</button><button class="filter" data-filter="tubs">Tubs & cups</button>
+        </div>
+        <div class="slider-controls"><button class="round-arrow" data-scroll="-1" aria-label="Scroll products left">←</button><button class="round-arrow" data-scroll="1" aria-label="Scroll products right">→</button></div>
+      </div>
+      <div class="product-rail" id="product-rail" aria-live="polite"></div>
+      <div class="catalog-foot"><span>PRODUCT RANGE BY POLAR ICE CREAM</span><a href="https://polaricecream.co.za/our-range/" target="_blank" rel="noreferrer">Explore the full official range ↗</a><span>ORDER VIA WHATSAPP</span></div>
+    </section>
+
+    <section class="services-section section-pad" id="services">
+      <div class="services-top reveal"><div><p class="eyebrow"><span class="gold-dot"></span> MORE FROM NMM</p><h2>Built for the<br><em>next move.</em></h2></div><p class="services-lede">A good first impression opens doors. We help small businesses make one, online and in real life.</p></div>
+      <div class="service-grid">
+        <article class="service-card service-feature reveal"><span class="service-number">01 / DIGITAL</span><div class="service-icon icon-browser"><i></i><i></i><i></i></div><h3>Websites</h3><p>Clean, mobile-ready websites that explain what you do and make it easy for customers to reach you.</p><a href="#contact">Build your website <span>↗</span></a></article>
+        <article class="service-card reveal"><span class="service-number">02 / BRAND</span><div class="service-icon icon-mark">N</div><h3>Branding & design</h3><p>Logos, business profiles and brand pieces that make your business feel considered and consistent.</p><a href="#contact">Shape your brand <span>↗</span></a></article>
+        <article class="service-card reveal"><span class="service-number">03 / PRINT</span><div class="service-icon icon-card"><i></i></div><h3>Posters & business cards</h3><p>Promotional posters, business cards and social graphics ready to help you get noticed.</p><a href="#contact">Create a design <span>↗</span></a></article>
+        <article class="service-card reveal"><span class="service-number">04 / DIGITAL SUPPORT</span><div class="service-icon icon-cursor">⌘</div><h3>Computing support</h3><p>Practical computer and digital help for everyday business needs. Tell us what you need done.</p><a href="#contact">Ask for support <span>↗</span></a></article>
+      </div>
+      <div class="quote-line reveal"><span>MADE WITH INTENTION</span><p>From a small screen to the street corner—<br><em>make every detail count.</em></p><span>NMM / 2026</span></div>
+    </section>
+
+    <section class="work-section section-pad" id="work">
+      <div class="work-heading reveal"><div><p class="eyebrow"><span class="gold-dot"></span> SELECTED WORK</p><h2>Real projects.<br><em>Good people.</em></h2></div><p>Take a look at a couple of business websites created for local brands. Each one is shaped around what that business needs to say.</p></div>
+      <div class="work-grid">
+        <a class="work-card work-amadwala reveal" href="https://kasigoldltd3482.github.io/amadwala-aqua/" target="_blank" rel="noreferrer">
+          <div class="work-preview preview-water"><div class="preview-top"><span>AMADWALA AQUA & ICE</span><span>01—02</span></div><div class="preview-copy"><small>YOUR LOCAL WATER STOP</small><strong>Refresh your day.<br>Make it yours.</strong><span class="preview-pill">CHOOSE YOUR WATER ↗</span></div><div class="bottle bottle-one"></div><div class="bottle bottle-two"></div><div class="bottle bottle-three"></div></div>
+          <div class="work-caption"><div><span>WEBSITE DESIGN · ORDER FLOW</span><h3>Amadwala Aqua & Ice</h3></div><span class="work-arrow">↗</span></div>
+        </a>
+        <a class="work-card work-zweli reveal" href="https://kasigoldltd3482.github.io/zweli-group/" target="_blank" rel="noreferrer">
+          <div class="work-preview preview-zweli"><div class="preview-top"><span>ZWELI GROUP</span><span>02—02</span></div><div class="preview-copy"><small>ONE GROUP. THREE BUSINESSES.</small><strong>Good service<br>for every occasion.</strong><div class="mini-tiles"><span>FOOD</span><span>TRAVEL</span><span>SOLAR</span></div></div><div class="preview-orbit"></div></div>
+          <div class="work-caption"><div><span>WEBSITE DESIGN · BUSINESS PROFILE</span><h3>Zweli Group</h3></div><span class="work-arrow">↗</span></div>
+        </a>
+      </div>
+      <p class="work-note">Want your business to be the next feature? <a href="#contact">Let’s talk ↗</a></p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-image"><img src="assets/melton-original.jpg" alt="Melton, founder of NMM Holdings" loading="lazy"><span>THE PERSON BEHIND THE WORK</span></div>
+      <div class="contact-content reveal"><p class="eyebrow"><span class="gold-dot"></span> START A CONVERSATION</p><h2>What are you<br><em>building?</em></h2><p>Ice cream order, new website, fresh branding or a design idea? Tell Melton what you have in mind and get a quote.</p><div class="contact-actions"><a class="button button-gold" href="https://wa.me/27751443192?text=Hi%20Melton%2C%20I%20found%20NMM%20Holdings%20online.%20I%E2%80%99d%20like%20to%20ask%20about%20your%20services." target="_blank" rel="noreferrer">WhatsApp Melton <span>↗</span></a><a class="contact-phone" href="tel:+27751443192">075 144 3192</a></div><div class="contact-foot"><span>POLOKWANE, LIMPOPO</span><span>AVAILABLE FOR NEW PROJECTS</span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="footer-logo" href="#top"><img src="assets/nmm-logo.jpg" alt="NMM Holdings"></a><span>INDEPENDENT IDEAS. MADE REAL.</span><span>© 2026 NMM HOLDINGS</span><a href="#top">BACK TO TOP ↑</a></footer>
+
+  <div class="cart-scrim" hidden></div>
+  <aside class="cart-drawer" aria-label="Your ice cream bag" aria-hidden="true">
+    <div class="cart-head"><div><p class="eyebrow"><span class="gold-dot"></span> YOUR SELECTION</p><h2>Your <em>bag.</em></h2></div><button class="cart-close" aria-label="Close cart">×</button></div>
+    <div class="cart-items"></div>
+    <div class="cart-empty"><span class="empty-orbit">N</span><p>Your bag is waiting for something good.</p><a href="#ice-cream" class="text-link cart-browse">Browse treats ↗</a></div>
+    <div class="cart-bottom"><div class="cart-total"><span>ESTIMATED SUBTOTAL</span><strong>R0.00</strong></div><p>Final price and availability are confirmed by Melton on WhatsApp.</p><button class="button button-gold whatsapp-checkout" type="button">Order on WhatsApp <span>↗</span></button><button class="clear-cart" type="button">Clear bag</button></div>
+  </aside>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
