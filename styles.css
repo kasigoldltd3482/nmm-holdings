@@ -13,7 +13,7 @@
 .hero-mark{width:clamp(290px,34vw,465px);height:clamp(170px,19vw,245px);margin:0 0 8px;perspective:1000px}
 .hero-eyebrow,.hero-copy{display:none}
 .hero h1{font:500 clamp(25px,3vw,39px)/1.1 var(--display);letter-spacing:.015em;margin:0 0 28px;color:#f0eee7;text-shadow:0 3px 22px #000}
-.hero h1 br{display:none}
+.hero h1 br{display:block}
 .hero-actions{margin:0;justify-content:center}
 .hero-actions .text-link{position:absolute;left:50%;bottom:91px;transform:translateX(-50%);display:flex;align-items:center;gap:18px;border:1px solid rgba(217,184,107,.7);padding:12px 20px;color:#f1e4c4;text-decoration:none;font:700 8px var(--ui);letter-spacing:.2em;white-space:nowrap}
 .hero-actions .text-link span{font-size:13px}
