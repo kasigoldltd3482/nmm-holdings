@@ -49,3 +49,5 @@
 /* Clear the small brand marks from the JPEG background field. */
 .brand img,.footer-logo img{mix-blend-mode:lighten;filter:contrast(1.18) drop-shadow(0 2px 8px rgba(217,184,107,.22))}
 .hero-mark img{mix-blend-mode:screen}
+
+.brand img,.footer-logo img{filter:none!important}
