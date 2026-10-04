@@ -24,3 +24,5 @@
 .hero-actions .text-link{font-size:0}.hero-actions .text-link:before{content:"OUR VENTURES";font:700 8px var(--ui);letter-spacing:.2em}@media(max-width:640px){.hero-actions .text-link:before{font-size:8px}}
 
 .hero-actions .text-link{top:calc(100svh - 250px);bottom:auto}@media(max-width:640px){.hero-actions .text-link{top:calc(100svh - 200px);bottom:auto}}
+
+.hero-content{bottom:0;height:auto}.hero-actions .text-link{top:auto;bottom:91px}@media(max-width:640px){.hero-actions .text-link{bottom:94px}}
