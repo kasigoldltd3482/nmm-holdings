@@ -51,3 +51,11 @@
 .hero-mark img{mix-blend-mode:screen}
 
 .brand img,.footer-logo img{filter:none!important}
+
+
+/* Center the standalone logo in the mobile header. */
+@media(max-width:640px){
+  .site-header{justify-content:center}
+  .site-header>.brand{position:absolute;left:50%;transform:translateX(-50%)}
+  .site-header>.menu-toggle{position:absolute;right:5vw}
+}
