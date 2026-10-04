@@ -44,3 +44,8 @@
 
 /* Allow the gold mark to blend with the portrait behind the hero content. */
 .hero-content{z-index:auto}.hero-mark{position:relative;z-index:3;mix-blend-mode:screen}
+
+
+/* Clear the small brand marks from the JPEG background field. */
+.brand img,.footer-logo img{mix-blend-mode:lighten;filter:contrast(1.18) drop-shadow(0 2px 8px rgba(217,184,107,.22))}
+.hero-mark img{mix-blend-mode:screen}
