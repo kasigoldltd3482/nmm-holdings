@@ -35,3 +35,9 @@
 .hero-photo{object-position:center 33%;opacity:.68;filter:grayscale(1) contrast(1.12)}
 .hero-shade{background:linear-gradient(180deg,rgba(5,5,5,.25) 0%,rgba(5,5,5,.03) 30%,rgba(5,5,5,.13) 68%,#050505 100%)}
 @media(max-width:640px){.hero-photo-wrap{inset:0;mask-image:linear-gradient(to bottom,transparent 0%,#000 10%,#000 87%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 10%,#000 87%,transparent 100%)}.hero-photo{object-position:center 32%;opacity:.56}.hero-mark{width:min(84vw,350px);height:min(36vw,132px);margin-bottom:16px}}
+
+/* Keep the logo transparent over the portrait and give the face room. */
+.hero-mark{perspective:none;animation:none;mix-blend-mode:screen;width:clamp(270px,28vw,360px);height:clamp(100px,10vw,130px);margin:0 0 12px}
+.hero-mark img{mix-blend-mode:screen;object-fit:cover;object-position:center;filter:none;animation:none}
+.hero-photo{object-position:center 0%}
+@media(max-width:640px){.hero-content.hero-concept-two,.hero-content{top:7%}.hero-mark{width:min(78vw,310px);height:min(28vw,105px);margin-bottom:15px}.hero-photo{object-position:center 0%}}
