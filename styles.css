@@ -26,3 +26,12 @@
 .hero-actions .text-link{top:calc(100svh - 250px);bottom:auto}@media(max-width:640px){.hero-actions .text-link{top:calc(100svh - 200px);bottom:auto}}
 
 .hero-content{bottom:0;height:auto}.hero-actions .text-link{top:auto;bottom:91px}@media(max-width:640px){.hero-actions .text-link{bottom:94px}}
+
+/* Let the gold NMM mark sit directly on the page with no black tile. */
+.brand img,.hero-mark img,.footer-logo img{mix-blend-mode:screen}
+.hero-mark{width:clamp(300px,32vw,420px);height:clamp(118px,13vw,168px);margin:0 0 12px;overflow:hidden}
+.hero-mark img{object-fit:cover;object-position:center;filter:drop-shadow(0 8px 22px rgba(217,184,107,.18))}
+.hero-photo-wrap{inset:0 12vw;mask-image:linear-gradient(to bottom,transparent 0%,#000 13%,#000 91%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 13%,#000 91%,transparent 100%)}
+.hero-photo{object-position:center 33%;opacity:.68;filter:grayscale(1) contrast(1.12)}
+.hero-shade{background:linear-gradient(180deg,rgba(5,5,5,.25) 0%,rgba(5,5,5,.03) 30%,rgba(5,5,5,.13) 68%,#050505 100%)}
+@media(max-width:640px){.hero-photo-wrap{inset:0;mask-image:linear-gradient(to bottom,transparent 0%,#000 10%,#000 87%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 10%,#000 87%,transparent 100%)}.hero-photo{object-position:center 32%;opacity:.56}.hero-mark{width:min(84vw,350px);height:min(36vw,132px);margin-bottom:16px}}
