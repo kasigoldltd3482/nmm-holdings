@@ -41,3 +41,6 @@
 .hero-mark img{mix-blend-mode:screen;object-fit:cover;object-position:center;filter:none;animation:none}
 .hero-photo{object-position:center 0%}
 @media(max-width:640px){.hero-content.hero-concept-two,.hero-content{top:7%}.hero-mark{width:min(78vw,310px);height:min(28vw,105px);margin-bottom:15px}.hero-photo{object-position:center 0%}}
+
+/* Allow the gold mark to blend with the portrait behind the hero content. */
+.hero-content{z-index:auto}.hero-mark{position:relative;z-index:3;mix-blend-mode:screen}
