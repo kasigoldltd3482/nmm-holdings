@@ -109,3 +109,15 @@
   <div class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
+
+<script>
+(()=>{
+ const map=document.createElement("script");
+ map.type="importmap";
+ map.textContent=JSON.stringify({imports:{three:"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}});
+ document.head.append(map);
+ const polish=document.createElement("link");polish.rel="stylesheet";polish.href=new URL("styles.css?v=nmm-cinematic-1",location.href);document.head.append(polish);
+ const icon=document.createElement("link");icon.rel="icon";icon.type="image/svg+xml";icon.href=new URL("nmm-mark-3d.svg",location.href);document.head.append(icon);
+ import(new URL("nmm-hero-3d.js",location.href)).catch(error=>console.warn("3D logo unavailable; keeping the original mark.",error));
+})();
+</script>
