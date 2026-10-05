@@ -59,3 +59,19 @@
   .site-header>.brand{position:absolute;left:50%;transform:translateX(-50%)}
   .site-header>.menu-toggle{position:absolute;right:5vw}
 }
+
+/* Cinematic details: light follows the founder portrait and the NMM mark gains real depth. */
+.hero-backdrop{background:radial-gradient(ellipse at 52% 43%,rgba(179,145,75,.2),transparent 42%),linear-gradient(180deg,#050505 0%,#080807 60%,#050505 100%)}
+.hero-photo{will-change:transform,clip-path;transform:translate3d(0,var(--founder-drift,0px),0) scale(1.025);animation:founder-reveal 1.25s cubic-bezier(.77,0,.18,1) .12s both,portrait-in 1.7s cubic-bezier(.2,.7,.2,1) both}
+@keyframes founder-reveal{from{clip-path:inset(0 39% 0 39%);opacity:.25}to{clip-path:inset(0);opacity:.68}}
+.hero-mark{position:relative;isolation:isolate;transform-style:preserve-3d}
+.hero-mark>img{transition:opacity .45s ease,filter .45s ease}
+.hero-mark-3d{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;filter:drop-shadow(0 12px 22px rgba(217,184,107,.24))}
+.hero-mark.webgl-ready>img{opacity:0}
+.product-image{perspective:900px}
+@media(hover:hover) and (pointer:fine){.product-card:hover .product-image img{transform:translateY(-3px) rotateY(-5deg) rotateX(2deg) scale(1.055)}.service-card:hover{transform:translateY(-3px);border-color:rgba(217,184,107,.42)}.brand:hover img{transform:rotateY(15deg) translateY(-1px)}}
+.reveal{clip-path:inset(0 0 12% 0);transition:opacity .72s cubic-bezier(.22,.7,.25,1),transform .72s cubic-bezier(.22,.7,.25,1),clip-path .88s cubic-bezier(.22,.7,.25,1)}
+.reveal.visible{clip-path:inset(0)}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}
+@media(max-width:640px){.hero-photo{transform:translate3d(0,var(--founder-drift,0px),0) scale(1.025);object-position:center 32%}.hero-mark-3d{filter:drop-shadow(0 7px 16px rgba(217,184,107,.2))}}
+@media(prefers-reduced-motion:reduce){.hero-photo{animation:none;clip-path:none;transform:none;will-change:auto}.hero-mark-3d{display:none}.hero-mark>img{opacity:1!important}.reveal{clip-path:none;transform:none;opacity:1}}
